@@ -1,19 +1,19 @@
 // Declare global var
-let userAge, distance, amount, amountYounger, amountOlder, sumToPay;
+let sumToPay;
 const kmPrice = 0.21;
 const discountYounger = 0.2;
 const discountOlder = 0.4;
 
 // Ask user age
-userAge = parseInt(prompt("Benvenuto, inserisci la tua età.")); 
+const userAge = parseInt(prompt("Benvenuto, inserisci la tua età.")); 
 
 // Ask user distance wanna cover
-distance = parseInt(prompt("Inserisci la distanza che vuoi percorrere (km)."))
+const distance = parseInt(prompt("Inserisci la distanza che vuoi percorrere (km)."))
 
 //Declare and Calculate ticket price with and without discount
-amount = (distance * kmPrice);
-amountYounger = amount - (amount * discountYounger);
-amountOlder = amount - (amount * discountOlder);
+const amount = (distance * kmPrice);
+const amountYounger = amount - (amount * discountYounger);
+const amountOlder = amount - (amount * discountOlder);
 
 // Condition for discount
 if(userAge < 18){   // if under 18 years old 20%
